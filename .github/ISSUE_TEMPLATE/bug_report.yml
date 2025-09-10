@@ -1,55 +1,35 @@
 name: Bug report
-description: Report a problem with the code or repository
-title: "Bug: "
-labels: [bug]
+about: Create a report to help us improve
+
+---
+
+name: "Bug report: Запрос в базу данных #10"
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thank you for taking the time to fill out this bug report. Please provide as much detail as possible.
-  - type: textarea
-    id: description
-    attributes:
-      label: Describe the bug
-      description: A clear and concise description of what the bug is.
-      placeholder: Enter bug description here...
-    validation:
-      required: true
-  - type: dropdown
-    id: severity
-    attributes:
-      label: Severity
-      description: How severe is the bug?
-      options:
-        - Critical
-        - High
-        - Medium
-        - Low
-    validation:
-      required: true
-  - type: input
-    id: environment
-    attributes:
-      label: Environment
-      description: Describe the environment where the bug was found (e.g., OS, browser, etc.)
-      placeholder: E.g., Windows 10, Chrome 89
-  - type: textarea
-    id: steps_to_reproduce
-    attributes:
-      label: Steps to reproduce
-      description: Steps to reproduce the behavior
-      placeholder: Step 1, Step 2, Step 3...
-  - type: textarea
-    id: expected_behavior
-    attributes:
-      label: Expected behavior
-      description: What you expected to happen
-  - type: textarea
-    id: actual_behavior
-    attributes:
-      label: Actual behavior
-      description: What actually happened
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for your help! Your time and effort are greatly appreciated.
+- type: markdown
+  attributes:
+    value: |-
+      **Описание проблемы:**
+      Запрос к базе данных по ID 10 возвращает ошибку.
+- type: input
+  id: title
+  attributes:
+    label: Заголовок
+    description: Кратко опишите проблему
+    placeholder: Ошибка в запросе по ID 10
+    value: Bug report: Запрос в базу данных #10
+- type: textarea
+  id: body
+  attributes:
+    label: Подробности
+    description: Опишите проблему более подробно
+    placeholder: Происходит ошибка при выполнении запроса
+- type: dropdown
+  id: severity
+  attributes:
+    label: Степень серьёзности
+    description: Выберите степень серьёзности проблемы
+    options:
+      - Low
+      - Medium
+      - High
+
